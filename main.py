@@ -10,7 +10,7 @@ st.markdown("""
     .main {
         background-color: #f0f8ff;
     }
-    h1, h2 {
+    h1, h2, H3 {
         color: #4b0082;
     }
     .stButton>button {
@@ -52,14 +52,14 @@ if st.button("Click for a Special Message"):
 st.balloons()
 
 # Accomplishment reflection
-accomplishment = st.text_area("Reflect on your journey. What are you most proud of?")
+accomplishment = st.text_area("Apa yang paling berkesan dari perjalaan TA kamu sejauh iniii?")
 if accomplishment:
-    st.write("That's amazing! Your hard work truly paid off.")
+    st.write("Semoga semuanya terbayarkan dan lega yaaa :)")
 
 # Future plans
 st.subheader("Abis beres sidang kamu mau ngapainnn " + name + "? Wkwkwkwk")
 options = st.multiselect(
-    'Pilihan mau ngapainn:',
+    'Mau ngapainn abis selesai sidangg?',
     ['Hiling', 'Hibernasi', 'Mukbang', 'Gawe', 'Gatau dah awokwokwok']
 )
 
@@ -72,7 +72,7 @@ audio_bytes = audio_file.read()
 st.audio(audio_bytes, format='audio/ogg')
 
 # Final message
-st.markdown("### 🎊 Once again, congratulations on this incredible achievement! 🎊")
+st.markdown("### 🎊 Sekali lagi, SELAMAT YAAAAA! 🎊")
 
 
 # Footer
